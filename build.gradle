@@ -8,11 +8,23 @@ import java.time.LocalDateTime
 buildscript {
 	apply from: "${rootDir}/gradle/versions.gradle"
 	repositories.maven { url "http://services.typefox.io/open-source/jenkins/job/xtext-extras/job/cd_issue261_b/lastSuccessfulBuild/artifact/build/maven-repository/" }
+//	repositories.maven { url "file:///Users/zarnekow/projects/xtext/xtext-extras/master/build/maven-repository" }
 	repositories.jcenter()
 	dependencies {
 		classpath "org.xtext:xtext-gradle-plugin:$versions.xtext_gradle_plugin"
 		classpath "io.typefox.gradle:gradle-p2gen:$versions.gradle_plugins"
 	}
+}
+
+plugins {
+    id 'com.gradle.build-scan' version '1.16'
+}
+
+buildScan {
+    termsOfServiceUrl = 'https://gradle.com/terms-of-service'
+    termsOfServiceAgree = 'yes'
+
+    publishAlways()
 }
 
 apply from: "${rootDir}/gradle/versions.gradle"
