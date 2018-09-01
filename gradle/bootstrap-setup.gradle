@@ -7,7 +7,7 @@ repositories {
 	maven {url "http://services.typefox.io/open-source/jenkins/job/xtext-lib/job/master/lastSuccessfulBuild/artifact/build/maven-repository/"}
 	maven {url "http://services.typefox.io/open-source/jenkins/job/xtext-core/job/master/lastSuccessfulBuild/artifact/build/maven-repository/"}
 	maven {url "http://services.typefox.io/open-source/jenkins/job/xtext-xtend/job/master/lastSuccessfulBuild/artifact/build/maven-repository/"}
-	maven { url "http://services.typefox.io/open-source/jenkins/job/xtext-extras/job/cd_issue261_b/lastSuccessfulBuild/artifact/build/maven-repository/" }
+	maven { url "http://services.typefox.io/open-source/jenkins/job/xtext-extras/job/master/lastSuccessfulBuild/artifact/build/maven-repository/" }
 	jcenter()
 	maven {
 		name 'xtend-bootstrap'
